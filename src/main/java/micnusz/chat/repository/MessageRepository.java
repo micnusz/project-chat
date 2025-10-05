@@ -6,5 +6,5 @@ import micnusz.chat.model.Message;
 import reactor.core.publisher.Flux;
 
 public interface MessageRepository extends ReactiveCrudRepository<Message, Long> {
-    Flux<Message> findAllByReceiverId(Long receiverId);
+    Flux<Message> findAllByAuthorId(Long authorId);
 }

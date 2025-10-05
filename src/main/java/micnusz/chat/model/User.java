@@ -31,4 +31,6 @@ public class User {
     @Column("online")
     private boolean online = false;
 
+    @Column("role")
+    private Role role;
 }
